@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Discover AI tools for studying, writing, research, coding, and presentations with StudyAI Hub.">
+<title>StudyAI Hub — Study Smarter, Not Harder</title>
+<style>
+:root{--bg:#0b1020;--panel:#121a30;--panel2:#18223c;--text:#f5f7ff;--muted:#aab4d0;--purple:#8c78ff;--cyan:#71e4d0;--line:#273251}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 75% -15%,#29235e 0,transparent 42%),var(--bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--text);line-height:1.55}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:5;background:#0b1020df;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff12}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;font-size:1.12rem;letter-spacing:-.03em}.logo{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--purple),#6255df);box-shadow:0 8px 25px #8c78ff35}.navlinks{display:flex;align-items:center;gap:24px;color:var(--muted);font-size:.93rem}.navlinks a:hover{color:white}.nav-cta,.primary{background:var(--purple);color:white;padding:11px 16px;border-radius:12px;font-weight:750;border:0;cursor:pointer}.menu{display:none;background:transparent;color:white;border:1px solid var(--line);padding:8px 11px;border-radius:10px}
+.hero{padding:78px 0 46px;text-align:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;padding:7px 12px;border:1px solid #8c78ff55;background:#8c78ff12;border-radius:999px;color:#c9c0ff;font-size:.78rem;font-weight:800;letter-spacing:.08em}.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan)}h1{font-size:clamp(2.5rem,6vw,4.8rem);line-height:1.03;letter-spacing:-.065em;max-width:850px;margin:24px auto 18px}h1 span{background:linear-gradient(90deg,#a89aff,#6de6d2);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:var(--muted);font-size:1.12rem;max-width:650px;margin:0 auto 26px}.searchbox{display:flex;align-items:center;gap:10px;max-width:650px;margin:auto;background:#151d34;border:1px solid #374365;border-radius:16px;padding:7px 8px 7px 15px;box-shadow:0 18px 55px #0003}.searchbox input{flex:1;min-width:0;background:transparent;color:white;border:0;outline:0;font:inherit;padding:10px}.searchbox input::placeholder{color:#8793b2}.searchbox button{padding:12px 18px;border-radius:11px}.quick{display:flex;justify-content:center;flex-wrap:wrap;gap:9px;margin-top:16px;color:var(--muted);font-size:.84rem}.quick button{background:transparent;color:#c4cce2;border:1px solid var(--line);border-radius:999px;padding:5px 10px;cursor:pointer}.section{padding:38px 0 28px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:20px}.section-head h2{font-size:1.65rem;letter-spacing:-.04em;margin:0}.section-head p{color:var(--muted);margin:4px 0 0;font-size:.93rem}.text-link{color:#c0b5ff;font-size:.9rem}.categories{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.cat{background:linear-gradient(150deg,#19223d,#11182c);border:1px solid var(--line);border-radius:16px;padding:17px 12px;text-align:left;cursor:pointer;color:white;transition:.2s}.cat:hover,.cat.active{border-color:var(--purple);transform:translateY(-2px);background:#201e43}.cat .ico{font-size:1.45rem;display:block;margin-bottom:9px}.cat strong{display:block;font-size:.9rem}.cat small{color:var(--muted);font-size:.75rem}.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.tool{background:linear-gradient(150deg,#151e35,#101629);border:1px solid var(--line);border-radius:18px;padding:19px;display:flex;flex-direction:column;min-height:220px;transition:.2s}.tool:hover{transform:translateY(-3px);border-color:#5b568f}.tool-top{display:flex;align-items:center;gap:12px}.tool-icon{width:45px;height:45px;display:grid;place-items:center;border-radius:13px;background:#242d49;font-size:1.4rem;flex-shrink:0}.tool h3{margin:0;font-size:1.02rem}.tool .type{color:#b7aaff;font-size:.76rem}.tool p{color:var(--muted);font-size:.9rem;margin:15px 0 20px}.tool-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto}.price{font-size:.75rem;color:#8ee6ce;background:#12352f;padding:5px 8px;border-radius:999px}.visit{font-size:.84rem;color:white;background:#272448;border:1px solid #484079;padding:8px 11px;border-radius:10px;font-weight:700}.visit:hover{background:#393165}.notice{color:var(--muted);font-size:.82rem;margin-top:15px}.empty{display:none;border:1px dashed #465174;border-radius:16px;padding:35px;text-align:center;color:var(--muted);grid-column:1/-1}.guides{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.guide{padding:20px;border:1px solid var(--line);border-radius:17px;background:#121a30}.guide .guide-icon{font-size:1.6rem}.guide h3{font-size:1rem;margin:10px 0 7px}.guide p{font-size:.88rem;color:var(--muted);margin:0}.about{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;align-items:center;background:linear-gradient(130deg,#1d1b43,#121b31);border:1px solid #38345f;border-radius:22px;padding:30px}.about h2{margin:0 0 10px;font-size:1.8rem;letter-spacing:-.04em}.about p{color:var(--muted);margin:0}.about-list{display:grid;gap:11px}.about-list div{display:flex;gap:10px;align-items:center;color:#dfe5fa;font-size:.92rem}.check{color:var(--cyan)}footer{margin-top:55px;border-top:1px solid var(--line);padding:28px 0 35px;color:var(--muted);font-size:.86rem}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footlinks{display:flex;gap:18px;flex-wrap:wrap}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#202b49;border:1px solid #45547c;padding:11px 16px;border-radius:12px;display:none;z-index:10;box-shadow:0 10px 35px #0006}
+@media(max-width:850px){.categories{grid-template-columns:repeat(3,1fr)}.tools{grid-template-columns:repeat(2,1fr)}.navlinks{gap:13px}.about{grid-template-columns:1fr}}
+@media(max-width:600px){.nav{height:65px}.menu{display:block}.navlinks{display:none;position:absolute;left:4%;right:4%;top:62px;background:#151d34;border:1px solid var(--line);border-radius:14px;padding:16px;flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.nav-cta{display:none}.hero{padding:55px 0 28px}.hero p{font-size:1rem}.searchbox button{padding:11px 12px}.categories{grid-template-columns:repeat(2,1fr);gap:9px}.tools,.guides{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.about{padding:22px}.foot{flex-direction:column}}
+
+.assistant-shell{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px}
+.assistant-info,.chat-panel{background:linear-gradient(150deg,#151e35,#101629);border:1px solid var(--line);border-radius:18px;padding:22px}
+.assistant-info h3{margin:0 0 10px;font-size:1.2rem}.assistant-info p{color:var(--muted);font-size:.92rem}
+.assistant-points{display:grid;gap:10px;margin-top:18px}.assistant-points div{font-size:.88rem;color:#dfe5fa}
+.chat-panel{display:flex;flex-direction:column;min-height:430px}.chat-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.status{font-size:.75rem;color:var(--muted);display:flex;align-items:center;gap:7px}.status-dot{width:7px;height:7px;border-radius:50%;background:#f0c36d}
+.chat-log{flex:1;min-height:220px;max-height:380px;overflow:auto;padding:14px 0;display:flex;flex-direction:column;gap:12px}
+.msg{max-width:92%;padding:11px 13px;border-radius:13px;font-size:.9rem;white-space:pre-wrap;overflow-wrap:anywhere}.msg.bot{background:#202945;color:#edf0ff;align-self:flex-start;border:1px solid #2c385b}.msg.user{background:#4f4399;color:white;align-self:flex-end}
+.chat-compose{display:flex;gap:8px;border-top:1px solid var(--line);padding-top:13px}.chat-compose textarea{flex:1;min-width:0;resize:vertical;min-height:46px;max-height:130px;background:#0c1325;color:white;border:1px solid #374365;border-radius:11px;padding:12px;font:inherit;outline:none}.chat-compose textarea:focus{border-color:var(--purple)}
+.chat-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.chat-actions button,.secondary-btn{background:#202945;color:#dce2fa;border:1px solid #354365;border-radius:9px;padding:7px 10px;cursor:pointer;font-size:.8rem}
+.assistant-note{font-size:.78rem;color:var(--muted);margin-top:12px}.primary:disabled{opacity:.55;cursor:wait}
+@media(max-width:760px){.assistant-shell{grid-template-columns:1fr}.chat-panel{min-height:400px}}
+
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><span class="logo">🎓</span> StudyAI <span style="color:#a99aff;margin-left:-7px">Hub</span></a>
+<nav class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#categories">Categories</a><a href="#tools">Explore Tools</a><a href="#guides">Study Guides</a><a href="#assistant">AI Assistant</a><a href="#about">About</a></nav>
+<a class="nav-cta" href="#tools">Explore tools ↗</a><button class="menu" id="menu" aria-label="Toggle menu">☰</button>
+</div></header>
+<main id="home">
+<section class="hero wrap">
+<div class="eyebrow"><span class="dot"></span> YOUR FREE AI STUDY TOOLKIT</div>
+<h1>Study smarter,<br><span>not harder.</span></h1>
+<p>Discover AI tools to help you learn, write, research, and create. Spend less time searching and more time understanding.</p>
+<div class="searchbox"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search tools, tasks, or subjects..." aria-label="Search AI tools"><button class="primary" id="searchBtn">Search</button></div>
+<div class="quick"><span>Popular:</span><button data-query="writing">Writing</button><button data-query="notes">Study notes</button><button data-query="coding">Coding</button><button data-query="presentation">Presentations</button></div>
+</section>
+<section class="section wrap" id="categories">
+<div class="section-head"><div><h2>Explore by category</h2><p>Find the right helper for your next assignment.</p></div></div>
+<div class="categories">
+<button class="cat active" data-category="All"><span class="ico">✨</span><strong>All tools</strong><small>Browse everything</small></button>
+<button class="cat" data-category="Study"><span class="ico">📚</span><strong>Study & Notes</strong><small>Learn concepts</small></button>
+<button class="cat" data-category="Writing"><span class="ico">✍️</span><strong>Writing</strong><small>Draft and edit</small></button>
+<button class="cat" data-category="Research"><span class="ico">🔎</span><strong>Research</strong><small>Explore topics</small></button>
+<button class="cat" data-category="Coding"><span class="ico">💻</span><strong>Coding</strong><small>Build skills</small></button>
+<button class="cat" data-category="Presentations"><span class="ico">📊</span><strong>Presentations</strong><small>Make slides</small></button>
+</div>
+</section>
+<section class="section wrap" id="tools">
+<div class="section-head"><div><h2>Student-favorite AI tools</h2><p id="resultCount">Explore useful tools for your study workflow.</p></div><a class="text-link" href="#tools" id="clearFilters">Reset filters ↺</a></div>
+<div class="tools" id="toolGrid">
+<article class="tool" data-category="Study" data-search="chatgpt study explain concepts brainstorm tutor writing">
+<div class="tool-top"><div class="tool-icon">💬</div><div><h3>ChatGPT</h3><span class="type">Study & learning</span></div></div><p>Ask questions, understand difficult concepts, brainstorm, and practise explanations.</p><div class="tool-bottom"><span class="price">Free tier</span><a class="visit" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+<article class="tool" data-category="Research" data-search="perplexity research answers sources search">
+<div class="tool-top"><div class="tool-icon">🔍</div><div><h3>Perplexity</h3><span class="type">Research</span></div></div><p>Explore questions with web-sourced answers and references to investigate further.</p><div class="tool-bottom"><span class="price">Free tier</span><a class="visit" href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+<article class="tool" data-category="Writing" data-search="grammarly writing grammar spelling editing">
+<div class="tool-top"><div class="tool-icon">✍️</div><div><h3>Grammarly</h3><span class="type">Writing</span></div></div><p>Check grammar, spelling, clarity, and tone in your written work.</p><div class="tool-bottom"><span class="price">Free tier</span><a class="visit" href="https://www.grammarly.com/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+<article class="tool" data-category="Study" data-search="quizlet flashcards quizzes revision memorization">
+<div class="tool-top"><div class="tool-icon">🧠</div><div><h3>Quizlet</h3><span class="type">Study & revision</span></div></div><p>Practise with flashcards and study activities to review key ideas.</p><div class="tool-bottom"><span class="price">Free tier</span><a class="visit" href="https://quizlet.com/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+<article class="tool" data-category="Study" data-search="notebooklm notes sources study guide audio">
+<div class="tool-top"><div class="tool-icon">📓</div><div><h3>NotebookLM</h3><span class="type">Study & notes</span></div></div><p>Explore your own source material and create study-oriented summaries.</p><div class="tool-bottom"><span class="price">Free access options</span><a class="visit" href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+<article class="tool" data-category="Writing" data-search="quillbot paraphrase summarize writing">
+<div class="tool-top"><div class="tool-icon">📝</div><div><h3>QuillBot</h3><span class="type">Writing</span></div></div><p>Rephrase text and explore summarizing and writing assistance features.</p><div class="tool-bottom"><span class="price">Free tier</span><a class="visit" href="https://quillbot.com/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+<article class="tool" data-category="Coding" data-search="replit coding programming code learn apps">
+<div class="tool-top"><div class="tool-icon">👩‍💻</div><div><h3>Replit</h3><span class="type">Coding</span></div></div><p>Experiment with code and learn how small software projects work.</p><div class="tool-bottom"><span class="price">Free access options</span><a class="visit" href="https://replit.com/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+<article class="tool" data-category="Presentations" data-search="canva presentations slides design visual projects">
+<div class="tool-top"><div class="tool-icon">🎨</div><div><h3>Canva</h3><span class="type">Presentations & design</span></div></div><p>Design class presentations, posters, diagrams, and visual projects.</p><div class="tool-bottom"><span class="price">Free tier</span><a class="visit" href="https://www.canva.com/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+<article class="tool" data-category="Research" data-search="Google Scholar academic research papers scholarly sources">
+<div class="tool-top"><div class="tool-icon">🎓</div><div><h3>Google Scholar</h3><span class="type">Academic research</span></div></div><p>Find scholarly articles and research publications for assignments.</p><div class="tool-bottom"><span class="price">Free search</span><a class="visit" href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+<article class="tool" data-category="Study" data-search="Khan Academy lessons math science learning practice">
+<div class="tool-top"><div class="tool-icon">🌱</div><div><h3>Khan Academy</h3><span class="type">Learning</span></div></div><p>Learn school subjects through lessons, explanations, and practice exercises.</p><div class="tool-bottom"><span class="price">Free learning</span><a class="visit" href="https://www.khanacademy.org/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+<article class="tool" data-category="Writing" data-search="Google Gemini writing brainstorming explain study">
+<div class="tool-top"><div class="tool-icon">✦</div><div><h3>Google Gemini</h3><span class="type">AI assistant</span></div></div><p>Brainstorm, ask questions, and get help exploring new topics.</p><div class="tool-bottom"><span class="price">Free access options</span><a class="visit" href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+<article class="tool" data-category="Presentations" data-search="Gamma presentations slides visual storytelling">
+<div class="tool-top"><div class="tool-icon">📽️</div><div><h3>Gamma</h3><span class="type">Presentations</span></div></div><p>Explore AI-assisted ways to structure presentations and visual stories.</p><div class="tool-bottom"><span class="price">Free tier</span><a class="visit" href="https://gamma.app/" target="_blank" rel="noopener noreferrer">Visit tool ↗</a></div></article>
+</div>
+<div class="empty" id="empty">No matching tools found. Try another search or reset the filters.</div>
+<p class="notice">Pricing and features can change. “Free tier” means some features may require payment; check each official website for current limits.</p>
+</section>
+<section class="section wrap" id="guides">
+<div class="section-head"><div><h2>Study smarter with simple guides</h2><p>Practical ideas to get more from your study time.</p></div></div>
+<div class="guides">
+<article class="guide"><div class="guide-icon">🗂️</div><h3>Turn class notes into revision questions</h3><p>Ask an AI assistant to create practice questions from your notes, then answer them without looking.</p></article>
+<article class="guide"><div class="guide-icon">🔬</div><h3>Research a topic responsibly</h3><p>Use AI to discover keywords, then verify important claims using reliable sources and original references.</p></article>
+<article class="guide"><div class="guide-icon">🧩</div><h3>Understand a difficult concept</h3><p>Ask for a simple explanation, a real-world example, and a short quiz to check your understanding.</p></article>
+</div>
+</section>
+
+<section class="section wrap" id="assistant">
+<div class="section-head"><div><h2>AI Study Assistant</h2><p>Ask study questions and get explanations from an AI model running in your browser.</p></div></div>
+<div class="assistant-shell">
+  <div class="assistant-info">
+    <div style="font-size:2rem">🤖</div>
+    <h3>Your personal study helper</h3>
+    <p>Ask for a simple explanation, examples, revision help, or a short practice quiz. This version uses a small open AI model on your device, rather than a paid API.</p>
+    <div class="assistant-points">
+      <div><span class="check">✓</span> No API key required</div>
+      <div><span class="check">✓</span> No account or paid API required</div>
+      <div><span class="check">✓</span> Your prompts are processed locally after the model loads</div>
+      <div><span class="check">✓</span> Helpful for explanations and study practice</div>
+    </div>
+    <p class="assistant-note"><strong>First use:</strong> loading the model requires internet and may download hundreds of MB. A modern browser with WebGPU support is recommended. Performance depends on your device.</p>
+    <button class="primary" id="loadModel" style="margin-top:8px">Load free AI model</button>
+    <p class="assistant-note" id="modelStatus" role="status">Model not loaded yet.</p>
+  </div>
+  <div class="chat-panel">
+    <div class="chat-head"><div><strong>StudyAI Chat</strong><div class="assistant-note" style="margin:2px 0 0">Learning-focused answers</div></div><div class="status"><span class="status-dot" id="statusDot"></span><span id="chatStatus">Not loaded</span></div></div>
+    <div class="chat-log" id="chatLog" aria-live="polite"><div class="msg bot">Hi! I'm your StudyAI assistant. Load the free model first, then ask me to explain a topic, make revision notes, or quiz you.</div></div>
+    <div class="chat-compose"><textarea id="chatInput" placeholder="e.g. Explain photosynthesis in simple words..." aria-label="Message for AI assistant"></textarea><button class="primary" id="sendChat" disabled>Send</button></div>
+    <div class="chat-actions"><button data-prompt="Explain photosynthesis in simple words and give one everyday example.">Explain a topic</button><button data-prompt="Make 5 short revision questions about the water cycle and include answers after the questions.">Make a quiz</button><button data-prompt="Show me a simple step-by-step method for taking useful study notes.">Study tips</button><button class="secondary-btn" id="clearChat">Clear chat</button></div>
+  </div>
+</div>
+</section>
+
+<section class="section wrap" id="about">
+<div class="about"><div><h2>Your study toolkit, all in one place.</h2><p>StudyAI Hub helps students discover tools that support learning and creativity. Use AI to understand ideas, practise skills, and improve your work—not to replace your own thinking.</p></div><div class="about-list"><div><span class="check">✓</span> Easy-to-find study resources</div><div><span class="check">✓</span> Links to official tool websites</div><div><span class="check">✓</span> Designed for mobile and desktop</div><div><span class="check">✓</span> No account needed to browse this directory</div></div></div>
+</section>
+</main>
+<footer><div class="wrap foot"><div>© <span id="year"></span> StudyAI Hub · Built for curious students.</div><div class="footlinks"><a href="#about">About</a><a href="mailto:hello@example.com" id="contact">Contact</a><a href="#about">Privacy & responsible use</a></div></div><div class="wrap notice">Independent directory. Tool names belong to their respective owners. This website is not affiliated with the listed services.</div></footer>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const search=document.getElementById('search'), cards=[...document.querySelectorAll('.tool')], cats=[...document.querySelectorAll('.cat')], empty=document.getElementById('empty'), count=document.getElementById('resultCount');
+let activeCategory='All';
+function filterTools(){const q=search.value.trim().toLowerCase();let n=0;cards.forEach(card=>{const okCat=activeCategory==='All'||card.dataset.category===activeCategory;const okText=(card.innerText+' '+card.dataset.search).toLowerCase().includes(q);const show=okCat&&okText;card.style.display=show?'flex':'none';if(show)n++});empty.style.display=n?'none':'block';count.textContent=`Showing ${n} of ${cards.length} tools`; }
+cats.forEach(btn=>btn.addEventListener('click',()=>{activeCategory=btn.dataset.category;cats.forEach(c=>c.classList.toggle('active',c===btn));filterTools();document.getElementById('tools').scrollIntoView({behavior:'smooth',block:'start'})}));
+search.addEventListener('input',filterTools);document.getElementById('searchBtn').addEventListener('click',filterTools);
+document.querySelectorAll('[data-query]').forEach(btn=>btn.addEventListener('click',()=>{search.value=btn.dataset.query;activeCategory='All';cats.forEach(c=>c.classList.toggle('active',c.dataset.category==='All'));filterTools();document.getElementById('tools').scrollIntoView({behavior:'smooth'})}));
+document.getElementById('clearFilters').addEventListener('click',e=>{e.preventDefault();search.value='';activeCategory='All';cats.forEach(c=>c.classList.toggle('active',c.dataset.category==='All'));filterTools()});
+document.getElementById('menu').addEventListener('click',()=>document.getElementById('navlinks').classList.toggle('open'));
+document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('contact').addEventListener('click',e=>{e.preventDefault();alert('Replace hello@example.com in index.html with your contact email before publishing.')});
+filterTools();
+</script>
+
+<script type="module">
+const loadButton = document.getElementById('loadModel');
+const sendButton = document.getElementById('sendChat');
+const input = document.getElementById('chatInput');
+const log = document.getElementById('chatLog');
+const modelStatus = document.getElementById('modelStatus');
+const chatStatus = document.getElementById('chatStatus');
+const statusDot = document.getElementById('statusDot');
+let engine = null;
+let busy = false;
+const history = [];
+function setStatus(message, ready=false) {
+  modelStatus.textContent = message;
+  chatStatus.textContent = ready ? 'Ready on this device' : (busy ? 'Working…' : 'Not loaded');
+  statusDot.style.background = ready ? '#71e4d0' : (busy ? '#a99aff' : '#f0c36d');
+  sendButton.disabled = !ready || busy;
+  loadButton.disabled = busy || !!engine;
+}
+function addMessage(text, who) {
+  const div = document.createElement('div');
+  div.className = 'msg ' + who;
+  div.textContent = text;
+  log.appendChild(div);
+  log.scrollTop = log.scrollHeight;
+  return div;
+}
+async function loadAI() {
+  if (engine || busy) return;
+  busy = true;
+  loadButton.disabled = true;
+  modelStatus.textContent = 'Checking browser support and loading AI library…';
+  chatStatus.textContent = 'Loading…';
+  statusDot.style.background = '#a99aff';
+  try {
+    if (!('gpu' in navigator)) {
+      throw new Error('This browser does not appear to support WebGPU. Try updating Chrome or Edge on a compatible computer. If it still does not work, this local AI feature may not be supported on your device.');
+    }
+    const webllm = await import('https://esm.run/@mlc-ai/web-llm');
+    const modelId = 'Llama-3.2-1B-Instruct-q4f16_1-MLC';
+    engine = await webllm.CreateMLCEngine(modelId, {
+      initProgressCallback: (progress) => {
+        const text = progress.text || 'Preparing model…';
+        modelStatus.textContent = text;
+        chatStatus.textContent = 'Loading model…';
+      }
+    });
+    modelStatus.textContent = 'AI model loaded. Ask your first question below.';
+    chatStatus.textContent = 'Ready on this device';
+    statusDot.style.background = '#71e4d0';
+    sendButton.disabled = false;
+    loadButton.textContent = 'AI model loaded';
+  } catch (err) {
+    engine = null;
+    modelStatus.textContent = 'Could not load the model: ' + (err?.message || String(err)) + ' Try the latest Chrome or Edge, check your internet connection, and reload the page.';
+    chatStatus.textContent = 'Could not load';
+    statusDot.style.background = '#ff9b9b';
+    loadButton.disabled = false;
+  } finally {
+    busy = false;
+    sendButton.disabled = !engine;
+  }
+}
+async function sendMessage(text) {
+  text = text.trim();
+  if (!text || !engine || busy) return;
+  input.value = '';
+  addMessage(text, 'user');
+  history.push({role:'user', content:text});
+  busy = true;
+  sendButton.disabled = true;
+  chatStatus.textContent = 'Thinking…';
+  statusDot.style.background = '#a99aff';
+  const reply = addMessage('Thinking…', 'bot');
+  try {
+    const messages = [
+      {role:'system', content:'You are StudyAI, a friendly and careful study assistant for students. Explain concepts clearly in age-appropriate language. Encourage learning and independent thinking. If unsure, say so. Do not invent sources or claim certainty where you do not have it. Use short headings or numbered steps when useful.'},
+      ...history.slice(-10)
+    ];
+    const result = await engine.chat.completions.create({messages, temperature:0.6, max_tokens:500});
+    const answer = result.choices?.[0]?.message?.content?.trim() || 'Sorry, I could not produce an answer. Please try again.';
+    reply.textContent = answer;
+    history.push({role:'assistant', content:answer});
+    modelStatus.textContent = 'Ready. Your chat is running locally in this browser.';
+    chatStatus.textContent = 'Ready on this device';
+    statusDot.style.background = '#71e4d0';
+  } catch (err) {
+    reply.textContent = 'Sorry, something went wrong while generating a response. Try a shorter question or reload the page.';
+    chatStatus.textContent = 'Response error';
+    modelStatus.textContent = 'The model loaded, but a response failed: ' + (err?.message || String(err));
+  } finally {
+    busy = false;
+    sendButton.disabled = !engine;
+    input.focus();
+  }
+}
+loadButton.addEventListener('click', loadAI);
+sendButton.addEventListener('click', () => sendMessage(input.value));
+input.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(input.value); }
+});
+document.querySelectorAll('[data-prompt]').forEach(button => button.addEventListener('click', () => {
+  input.value = button.dataset.prompt;
+  if (engine) sendMessage(input.value);
+  else { input.focus(); modelStatus.textContent = 'Click “Load free AI model” before sending a prompt.'; }
+}));
+document.getElementById('clearChat').addEventListener('click', () => {
+  history.length = 0;
+  log.replaceChildren();
+  addMessage('Chat cleared. Ask a new study question whenever you are ready.', 'bot');
+});
+</script>
+
+</body>
+</html>
